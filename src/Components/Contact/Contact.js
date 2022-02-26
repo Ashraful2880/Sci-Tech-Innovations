@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="container mx-auto py-20">
       <div className="lg:flex">
-        <div className="xl:w-2/5 lg:w-2/5 bg-indigo-700 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
+        <div className="xl:w-2/5 lg:w-2/5 bg-gray-800 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
           <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
             <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
               Get in touch
@@ -24,7 +24,7 @@ const Contact = () => {
                 contact.ashraful1@gmail.com
               </p>
             </div>
-            <p className="text-lg text-white pt-10 tracking-wide">
+            <p className="text-lg text-white pt-10 tracking-wide text-left">
               545, Street 11, Block F
               <br />
               Jhenaidah, Bangladesh
@@ -49,7 +49,7 @@ const Contact = () => {
                     required
                     name="full_name"
                     type="text"
-                    className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
+                    className="focus:outline-none focus:border focus:border-orange-500 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                     placeholder="Full Name"
                   />
                 </div>
@@ -66,7 +66,7 @@ const Contact = () => {
                     required
                     name="email"
                     type="email"
-                    className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
+                    className="focus:outline-none focus:border focus:border-orange-500 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                     placeholder="example@email.com"
                   />
                 </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                     required
                     name="phone"
                     type="tel"
-                    className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
+                    className="focus:outline-none focus:border focus:border-orange-500 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                     placeholder="+88 0123456789"
                   />
                 </div>
@@ -102,13 +102,13 @@ const Contact = () => {
                 <textarea
                   placeholder="Your Message"
                   name="message"
-                  className="border-gray-300 border mb-4 rounded py-2 text-sm outline-none resize-none px-3 focus:border focus:border-indigo-700"
+                  className="border-gray-300 border mb-4 rounded py-2 text-sm outline-none resize-none px-3 focus:border focus:border-orange-500"
                   rows="8"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="focus:outline-none bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-3 text-sm leading-6 focus:border-4 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700"
+                className="focus:outline-none bg-orange-500 transition duration-300 border border-orange-500 hover:bg-transparent hover:text-orange-500 rounded text-white px-8 py-3 text-sm leading-6 focus:border-4 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700"
               >
                 Submit
               </button>
