@@ -7,7 +7,6 @@ import Invited from "./Components/Invited/Invited";
 import InviteUsers from "./Components/InviteUsers/InviteUsers";
 import NotFound from "./Components/NotFound/NotFound";
 import Register from "./Components/Register/Register";
-import Service from "./Components/Service/Service";
 import Footer from "./Components/Shared/Footer/Footer";
 import Header from "./Components/Shared/Header/Header";
 import Signin from "./Components/Signin/Signin";
@@ -24,7 +23,6 @@ function App() {
           <Route path="/invite" element={<InviteUsers />} />
           <Route path="/users" element={<AllUsers />} />
           <Route path="/invited" element={<Invited />} />
-          <Route path="/service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/register" element={<Register />} />

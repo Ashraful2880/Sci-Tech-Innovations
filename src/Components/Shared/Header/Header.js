@@ -38,37 +38,37 @@ const Header = () => {
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
                 <Link
-                  className="text-gray-200 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                   to="/"
                 >
                   Home
                 </Link>
                 <Link
-                  className="text-gray-200 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                   to="/invite"
                 >
                   Invite Users
                 </Link>
                 <Link
-                  className="text-gray-200 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                   to="/users"
                 >
                   All Users
                 </Link>
                 <Link
-                  className="text-gray-200 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                   to="/invited"
                 >
                   Invited
                 </Link>
                 <Link
-                  className="text-gray-200 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                   to="/service"
                 >
                   Service
                 </Link>
                 <Link
-                  className="text-gray-200 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                   to="/contact"
                 >
                   Contact
@@ -77,15 +77,11 @@ const Header = () => {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <Link to="/home">
-              <img
-                className="h-8 w-8 rounded-full ring-2 ring-offset-2 ml-2"
-                src="https://avatars.githubusercontent.com/u/86690202?s=48&v=4"
-                alt="Profile"
-              />
-            </Link>
-            <Link to="/home">
-              <i className="fas fa-sign-out-alt text-white ml-4 text-lg px-2 border border-gray-800 rounded-lg hover:border-yellow-500"></i>
+            <Link
+              to="/signin"
+              className="text-gray-200 border border-orange-500 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+            >
+              Sign in
             </Link>
           </div>
         </div>
@@ -94,37 +90,37 @@ const Header = () => {
         <div className="px-2 pt-2 pb-3 space-y-1">
           <Link
             to="/"
-            className="text-gray-200 hover:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Home
           </Link>
           <Link
             to="/invite"
-            className="text-gray-200 hover:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Invite Users
           </Link>
           <Link
             to="/users"
-            className="text-gray-200 hover:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             All Users
           </Link>
           <Link
             to="/invited"
-            className="text-gray-200 hover:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Invited
           </Link>
           <Link
             to="/service"
-            className="text-gray-200 hover:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Service
           </Link>
           <Link
             to="/contact"
-            className="text-gray-200 hover:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Contact
           </Link>
