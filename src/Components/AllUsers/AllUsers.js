@@ -25,7 +25,7 @@ const AllUsers = () => {
     });
 
   return (
-    <div className="container mx-auto flex flex-col mt-5 mb-10">
+    <div className="container mx-auto flex flex-col mt-5 mb-10 min-h-screen">
       {users.length > 0 ? (
         <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <h1 className="mb-5 font-bold text-3xl">All Registerd Users</h1>
