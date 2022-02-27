@@ -27,44 +27,45 @@ const Invited = () => {
     <div className="container mx-auto flex flex-col mt-5 h-screen">
       {pendingUsers.length > 0 ? (
         <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <h1 className="mb-5 font-bold text-3xl">Invited People List</h1>
           <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-            <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
+            <div className="shadow overflow-hidden border border-orange-500 sm:rounded-lg">
+              <table className="min-w-full divide-y divide-orange-500">
+                <thead className="bg-gray-200">
                   <tr>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-md font-bold text-black uppercase tracking-wider"
                     >
                       Id
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-md font-bold text-black uppercase tracking-wider"
                     >
                       Invited To
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-md font-bold text-black uppercase tracking-wider"
                     >
                       Invited On
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-md font-bold text-black uppercase tracking-wider"
                     >
                       Invited By
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-md font-bold text-black uppercase tracking-wider"
                     >
                       Roles For Invited
                     </th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
+                <tbody className="bg-white divide-y divide-orange-500">
                   {pendingUsers.map((user) => (
                     <tr key={user._id}>
                       <td className="px-6 py-4 whitespace-nowrap">
