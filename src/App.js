@@ -1,8 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./Components/About/About";
+import AllUsers from "./Components/AllUsers/AllUsers";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home/Home";
+import Invited from "./Components/Invited/Invited";
+import InviteUsers from "./Components/InviteUsers/InviteUsers";
 import NotFound from "./Components/NotFound/NotFound";
 import Register from "./Components/Register/Register";
 import Service from "./Components/Service/Service";
@@ -19,7 +21,9 @@ function App() {
           <Route path="/*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/invite" element={<InviteUsers />} />
+          <Route path="/users" element={<AllUsers />} />
+          <Route path="/invited" element={<Invited />} />
           <Route path="/service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signin" element={<Signin />} />

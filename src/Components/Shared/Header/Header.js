@@ -43,12 +43,23 @@ const Header = () => {
                 >
                   Home
                 </Link>
-
                 <Link
                   className="text-gray-200 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
-                  to="/about"
+                  to="/invite"
                 >
-                  About
+                  Invite Users
+                </Link>
+                <Link
+                  className="text-gray-200 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  to="/users"
+                >
+                  All Users
+                </Link>
+                <Link
+                  className="text-gray-200 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  to="/invited"
+                >
+                  Invited
                 </Link>
                 <Link
                   className="text-gray-200 hover:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
@@ -77,10 +88,6 @@ const Header = () => {
               <i className="fas fa-sign-out-alt text-white ml-4 text-lg px-2 border border-gray-800 rounded-lg hover:border-yellow-500"></i>
             </Link>
           </div>
-
-          <Link to="/register">
-            <i className="fas fa-sign-in-alt text-white ml-4 text-lg px-2 py-1 border border-gray-800 rounded-lg hover:border-yellow-500"></i>
-          </Link>
         </div>
       </div>
       <div className="hidden" id="toogleDiv">
@@ -92,10 +99,22 @@ const Header = () => {
             Home
           </Link>
           <Link
-            to="/about"
+            to="/invite"
             className="text-gray-200 hover:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            About
+            Invite Users
+          </Link>
+          <Link
+            to="/users"
+            className="text-gray-200 hover:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          >
+            All Users
+          </Link>
+          <Link
+            to="/invited"
+            className="text-gray-200 hover:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          >
+            Invited
           </Link>
           <Link
             to="/service"
