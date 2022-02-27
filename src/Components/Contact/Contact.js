@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="lg:flex">
         <div className="xl:w-2/5 lg:w-2/5 bg-gray-800 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
           <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
-            <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
+            <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold text-left">
               Get in touch
             </h1>
             <p className="text-lg text-gray-300 pb-8 leading-relaxed lg:pr-4 text-left">
@@ -15,12 +15,12 @@ const Contact = () => {
               are here to asset you.
             </p>
             <div className="flex pb-4 items-center">
-              <i className="fas fa-phone-alt text-white"></i>
-              <p className="pl-4 text-white text-base">+88 01974-238487</p>
+              <i className="fas fa-phone-alt text-orange-500"></i>
+              <p className="pl-4 text-orange-500 text-base">+88 01974-238487</p>
             </div>
             <div className="flex items-center">
-              <i className="fas fa-envelope text-white"></i>
-              <p className="pl-4 text-white text-base">
+              <i className="fas fa-envelope text-orange-500"></i>
+              <p className="pl-4 text-orange-500 text-base">
                 contact.ashraful1@gmail.com
               </p>
             </div>

@@ -2,7 +2,9 @@ import React from "react";
 
 const Alert = ({ alertText, alert, setAlert, alertColor, alertTitle }) => {
   return (
-    <div className={`container mx-auto w-2/4 my-4 ${alert}`}>
+    <div
+      className={`container mx-auto w-1/4 my-4 absolute top-14 left-3 ${alert}`}
+    >
       <div
         style={{ borderColor: `${alertColor}` }}
         className={`flex border p-1 rounded-md bg-[#EEF8F5] items-center`}
@@ -15,7 +17,10 @@ const Alert = ({ alertText, alert, setAlert, alertColor, alertTitle }) => {
         </button>
         <h5 className="font-bold mr-2">A {alertTitle} Title</h5>
         <p>{alertText}</p>
-        <button onClick={() => setAlert("hidden")} className=" ml-10">
+        <button
+          onClick={() => setAlert("hidden")}
+          className="ml-10 font-bold text-red-500"
+        >
           X
         </button>
       </div>
