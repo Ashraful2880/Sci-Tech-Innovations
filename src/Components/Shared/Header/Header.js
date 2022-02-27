@@ -63,12 +63,6 @@ const Header = () => {
                 </Link>
                 <Link
                   className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
-                  to="/service"
-                >
-                  Service
-                </Link>
-                <Link
-                  className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                   to="/contact"
                 >
                   Contact
@@ -111,12 +105,6 @@ const Header = () => {
             className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Invited
-          </Link>
-          <Link
-            to="/service"
-            className="text-gray-200 hover:bg-orange-500 focus:bg-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Service
           </Link>
           <Link
             to="/contact"
