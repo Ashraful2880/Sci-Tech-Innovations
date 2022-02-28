@@ -22,7 +22,7 @@ const Invited = () => {
     });
 
   return (
-    <div className="container mx-auto flex flex-col mt-5 h-screen">
+    <div className="container mx-auto flex flex-col mt-5 h-screen pb-10">
       {pendingUsers.length > 0 ? (
         <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <h1 className="mb-5 font-bold text-3xl">Invited People List</h1>
