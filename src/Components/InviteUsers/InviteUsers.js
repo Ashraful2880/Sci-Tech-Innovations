@@ -10,9 +10,8 @@ const InviteUsers = () => {
   const [alertText, setAlertText] = useState("");
   const [alertColor, setAlertColor] = useState("");
 
-  const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbnRhY3QuYXNocmFmdWwxQGdtYWlsLmNvbSIsInBob25lIjoiODgwMTk3NDIzODQ4NyIsImlkIjoxMDEsImZpcnN0TmFtZSI6IkFzaHJhZnVsIiwic3ViIjoxMDEsInByb2ZpbGVQaWN0dXJlIjpudWxsLCJpYXQiOjE2NDU5ODIyOTAsImV4cCI6MTY0NjAxMTA5MH0.ugnPEYj-P_w4iuX_euN7InGkLHlKeSvcTQh1DmRvPE0";
-  const accountId = 3;
+  const token = process.env.REACT_APP_USER_TOKEN;
+  const accountId = process.env.REACT_APP_USER_ACCOUNT_ID;
 
   const inviteApi = `https://dev.biniyog.com.bd/security/accounts/${accountId}/invite-user`;
   const { register, handleSubmit } = useForm();

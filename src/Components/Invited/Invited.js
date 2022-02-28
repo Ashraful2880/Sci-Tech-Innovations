@@ -5,9 +5,8 @@ import Loading from "../Loading/Loading";
 const Invited = () => {
   const [pendingUsers, setPendingUsers] = useState([]);
 
-  const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbnRhY3QuYXNocmFmdWwxQGdtYWlsLmNvbSIsInBob25lIjoiODgwMTk3NDIzODQ4NyIsImlkIjoxMDEsImZpcnN0TmFtZSI6IkFzaHJhZnVsIiwic3ViIjoxMDEsInByb2ZpbGVQaWN0dXJlIjpudWxsLCJpYXQiOjE2NDU5ODIyOTAsImV4cCI6MTY0NjAxMTA5MH0.ugnPEYj-P_w4iuX_euN7InGkLHlKeSvcTQh1DmRvPE0";
-  const accountId = 3;
+  const token = process.env.REACT_APP_USER_TOKEN;
+  const accountId = process.env.REACT_APP_USER_ACCOUNT_ID;
   const pendingInvites = `https://dev.biniyog.com.bd/security/accounts/${accountId}/pending-invites`;
   axios
     .get(pendingInvites, {
@@ -16,7 +15,6 @@ const Invited = () => {
       },
     })
     .then(function (response) {
-      console.log("pendingInvites response", response.data);
       setPendingUsers(response.data);
     })
     .catch(function (error) {
@@ -67,38 +65,38 @@ const Invited = () => {
                 </thead>
                 <tbody className="bg-white divide-y divide-orange-500">
                   {pendingUsers.map((user) => (
-                    <tr key={user._id}>
+                    <tr key={user.id}>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
-                          <div className="text-sm font-medium text-gray-900">
+                          <div className="text-sm font-semibold text-black">
                             {user.id}
                           </div>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
-                          <div className="text-sm font-medium text-gray-900">
+                          <div className="text-sm font-semibold text-black">
                             {user.emailInvitedTo}
                           </div>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
-                          <div className="text-sm font-medium text-gray-900">
+                          <div className="text-sm font-semibold text-black">
                             {user.invitedOn}
                           </div>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
-                          <div className="text-sm font-medium text-gray-900">
+                          <div className="text-sm okld text-black">
                             {user.invitedBy.email}
                           </div>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
-                          <div className="text-sm font-medium text-gray-900">
+                          <div className="text-sm font-semibold text-black">
                             {user.rolesInvitedTo}
                           </div>
                         </div>

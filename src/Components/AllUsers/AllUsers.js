@@ -3,11 +3,10 @@ import React, { useState } from "react";
 import Loading from "../Loading/Loading";
 
 const AllUsers = () => {
-  const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvbnRhY3QuYXNocmFmdWwxQGdtYWlsLmNvbSIsInBob25lIjoiODgwMTk3NDIzODQ4NyIsImlkIjoxMDEsImZpcnN0TmFtZSI6IkFzaHJhZnVsIiwic3ViIjoxMDEsInByb2ZpbGVQaWN0dXJlIjpudWxsLCJpYXQiOjE2NDU5ODIyOTAsImV4cCI6MTY0NjAxMTA5MH0.ugnPEYj-P_w4iuX_euN7InGkLHlKeSvcTQh1DmRvPE0";
-  const accountId = 3;
+  const token = process.env.REACT_APP_USER_TOKEN;
+  const accountId = process.env.REACT_APP_USER_ACCOUNT_ID;
+
   const [users, setUsers] = useState([]);
-  console.log(users);
 
   const usersOnAccount = `https://dev.biniyog.com.bd/security/accounts/${accountId}/users`;
   axios
@@ -17,7 +16,6 @@ const AllUsers = () => {
       },
     })
     .then(function (response) {
-      console.log("usersOnAccount response", response.data);
       setUsers(response.data);
     })
     .catch(function (error) {
@@ -62,7 +60,7 @@ const AllUsers = () => {
                 </thead>
                 <tbody className="bg-white divide-y divide-orange-500">
                   {users.map((user) => (
-                    <tr key={user._id}>
+                    <tr key={user.id}>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
                           <div className="text-sm font-semibold text-gray-900">
